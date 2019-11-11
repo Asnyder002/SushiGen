@@ -3,3 +3,12 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 8vh;
+    background-color: rgb(195, 172, 216);
+    font-family: 'Raleway', sans-serif;
+}
