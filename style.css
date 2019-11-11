@@ -9,6 +9,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
+    height: 8vh;
     background-color: rgb(83, 54, 110);
     font-family: 'Raleway', sans-serif;
 }
