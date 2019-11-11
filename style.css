@@ -9,6 +9,13 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-width: 8vh;
-    background-color: rgb(195, 172, 216);
+    background-color: rgb(83, 54, 110);
     font-family: 'Raleway', sans-serif;
+}
+
+.logo{
+    color: rgba(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
 }
