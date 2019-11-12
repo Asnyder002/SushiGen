@@ -16,6 +16,46 @@ header {
     background-size: cover;
 }
 
+
+
+.titleContainer{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    height: 92vh;
+}
+
+.titleContainer div{
+    height: 6px;
+    width: 530px;
+    background-color: white;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.titleContainer h1 {
+    margin: 0;
+    padding: 0;
+}
+#business{
+    font-weight: 300;
+    font-size: 75px;
+    letter-spacing: 6px;
+}
+
+#area{
+    font-weight: 100;
+    letter-spacing: 4px;
+    font-size: 40px;
+}
+
+
+
+
 nav{
     display: flex;
     justify-content: space-around;
@@ -70,6 +110,19 @@ nav{
 @media screen and (max-width:768px){
     body{
         overflow-x: hidden;
+    }
+
+    .titleContainer div{
+        width: 275px;
+        height: 3px;
+    }
+    #area{
+        font-size: 20px;
+    }
+    
+    #business{
+        font-size: 65px;
+        letter-spacing: 10px;
     }
 
     .nav-links{
