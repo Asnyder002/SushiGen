@@ -25,11 +25,12 @@ header {
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     height: 92vh;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .line{
     height: 6px;
-    width: 530px;
+    width: 500px;
     background-color: white;
     margin-top: 15px;
     margin-bottom: 8px;
@@ -49,7 +50,7 @@ header {
 #area{
     font-weight: 100;
     letter-spacing: 4px;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .arrow{
@@ -147,7 +148,7 @@ main p {
     }
     
     #business{
-        font-size: 65px;
+        font-size: 55px;
         letter-spacing: 10px;
     }
 
