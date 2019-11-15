@@ -18,7 +18,7 @@ header {
 
 .titleContainer{
     display: flex;
-    color: white;
+    color: rgb(226, 226, 226);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -31,7 +31,7 @@ header {
 .line{
     height: 6px;
     width: 500px;
-    background-color: white;
+    background-color: rgb(226, 226, 226);
     margin-top: 15px;
     margin-bottom: 8px;
 }
