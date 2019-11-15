@@ -112,6 +112,10 @@ nav{
     width: 45%;
 }
 
+main{
+    padding-bottom: 5%;
+}
+
 main p {
     margin-left: 15%;
     margin-right: 15%;
