@@ -127,6 +127,10 @@ main p {
     margin-bottom: 15px;
 }
 
+th {
+    text-align: left; 
+  }
+
 @media screen and (max-width:1024px){
     .nav-links{
         width: 60%;
