@@ -109,16 +109,16 @@ nav{
     margin-right: auto;
     margin-top: 5%;
     margin-bottom: 5%;
-    width: 45%;
+    width: 60%;
 }
 
 main{
     padding-bottom: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 main p {
-    margin-left: 15%;
-    margin-right: 15%;
     font-family: 'Lato', sans-serif;
     font-size: 1.2em;
     font-weight: 300;
@@ -127,9 +127,46 @@ main p {
     margin-bottom: 15px;
 }
 
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #464646;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-family: 'Lato', sans-serif;
+}
+
+.footerBox {
+    color: rgb(226, 226, 226);
+}
+
+.footerHeading{
+    font-size: 25px;
+    padding-bottom: 40px;
+}
+
+.city{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.address{
+    margin-bottom: 35px;
+    line-height: 23px;
+}
+
 th {
-    text-align: left; 
-  }
+    text-align: left;
+}
+
+td {
+    text-align: left;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
 
 @media screen and (max-width:1024px){
     .nav-links{
@@ -137,6 +174,10 @@ th {
     }
     .logoBanner {
         width: 70%
+    }
+
+    #locationBox{
+        margin-right: 15%;
     }
 }
 
@@ -154,7 +195,7 @@ th {
     #area{
         font-size: 20px;
     }
-    
+
     #business{
         font-size: 55px;
         letter-spacing: 10px;
@@ -181,6 +222,23 @@ th {
     .burger{
         display: block;
         cursor: pointer;
+    }
+
+    main{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .logoBanner{
+        margin-bottom: 10%;
+    }
+
+    footer{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .footerHeading{
+        padding-bottom: 25px;
     }
 
 }
