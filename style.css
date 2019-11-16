@@ -197,6 +197,10 @@ td {
         overflow-x: hidden;
     }
 
+    .header {
+        background-attachment: scroll;
+    }
+
     .line{
         width: 275px;
         height: 3px;
