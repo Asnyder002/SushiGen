@@ -222,6 +222,7 @@ td {
     .line{
         width: 275px;
         height: 3px;
+        background-color: black;
     }
 
 
