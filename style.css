@@ -205,6 +205,7 @@ td {
     }
 
     .header {
+        background-image: url("./img/sushiSmall.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: top;
