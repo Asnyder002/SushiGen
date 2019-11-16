@@ -176,7 +176,7 @@ td {
 
 @media screen and (max-width:1024px){
 
-    .header {
+    header {
         background-attachment: scroll;
     }
 
@@ -197,7 +197,7 @@ td {
         overflow-x: hidden;
     }
 
-    .header {
+    header {
         background-attachment: scroll;
     }
 
