@@ -200,7 +200,7 @@ td {
     .header {
         background-size: cover;
         -webkit-background-size: cover;
-        background-attachment: scroll;
+        background-attachment: inherit;
     }
 
     .line{
