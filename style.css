@@ -8,11 +8,12 @@ header {
     position: relative;
     width: 100%;
     height: 100%;
+    max-width: 100vw;
     background-color: #464646;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: url("./img/sushi.jpg");
+    background-image: url("./img/sushi.JPG");
     background-size: cover;
 }
 
