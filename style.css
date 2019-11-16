@@ -12,7 +12,7 @@ header {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: url(img/sushi.jpg);
+    background-image: url("img/sushi.jpg");
     background-size: cover;
 }
 
