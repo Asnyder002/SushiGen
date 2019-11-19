@@ -199,6 +199,7 @@ td {
 
     header {
         background-attachment: scroll;
+        background-image: url("./img/sushiSmall.jpg");
     }
 
     .line{
