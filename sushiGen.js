@@ -57,8 +57,10 @@ const smoothScroll = function(target, duration) {
 
 const arrow = document.querySelector(".arrow");
 
-arrow.addEventListener("click", function(){
-    smoothScroll(".logoBanner", 1000);
-});
+if(arrow != null) {
+    arrow.addEventListener("click", function(){
+        smoothScroll(".logoBanner", 1000);
+    });
+}
 
 navSlide();
