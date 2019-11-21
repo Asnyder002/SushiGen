@@ -221,7 +221,7 @@ td {
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: rgb(83, 54, 110);
+        background-color: rgba(0, 0, 0, 0.9);
         flex-direction: column;
         align-items: center;
         width: 50%;
