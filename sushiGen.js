@@ -59,7 +59,7 @@ const arrow = document.querySelector(".arrow");
 
 if(arrow != null) {
     arrow.addEventListener("click", function(){
-        smoothScroll(".logoBanner", 1000);
+        smoothScroll(".logoBanner", 750);
     });
 }
 
