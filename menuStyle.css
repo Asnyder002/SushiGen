@@ -87,14 +87,18 @@ nav {
     transition: all 0.3s ease;
 }
 
+main {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 .menuList {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
     margin-top: 5%;
-    margin-left: 20%;
-    margin-right: 20%;
+    padding-bottom: 50px;
 }
 
 .menuList li {
@@ -111,6 +115,48 @@ nav {
     font-weight: 100;
     text-transform: uppercase;
 }
+
+.menuSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuHeader {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    padding-bottom: 50px;
+}
+
+.menuItems {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.menuItems li {
+    width: 47%;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    list-style: none;
+}
+
+.outerWrapper {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
 @media screen and (max-width:1024px){
 
     header {
