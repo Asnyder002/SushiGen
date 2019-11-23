@@ -128,7 +128,11 @@ main {
     font-size: 40px;
     font-weight: 300;
     letter-spacing: 5px;
-    padding-bottom: 50px;
+}
+
+.menuHeaderNote {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 20px;
 }
 
 .menuItems {
@@ -136,6 +140,7 @@ main {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
+    padding-top: 50px;
 }
 
 .menuItems li {
