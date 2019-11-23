@@ -106,11 +106,11 @@ nav{
 
     header {
         background-attachment: scroll;
+        height: 40vh;
     }
 
-    .line{
-        width: 275px;
-        height: 3px;
+    .titleContainer {
+        height: 32vh;
     }
 
     .nav-links{
