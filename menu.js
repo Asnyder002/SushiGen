@@ -9,7 +9,7 @@ class menuItem {
 
 function setUpMenuList() {
 
-    menuItems = [
+    let menuItems = [
                  new menuItem(document.querySelector(".starterLink"), document.querySelectorAll(".starter"), true),
                  new menuItem(document.querySelector(".hibachiLink"), document.querySelectorAll(".hibachi"), false),
                  new menuItem(document.querySelector(".fishLink"), document.querySelectorAll(".fish"), false),
@@ -129,21 +129,18 @@ function setUpMenuList() {
     });
 
     function showSection(e, array) {
+        e.preventDefault();
         setAllFalse();
-
+        
         for(let i = 0; i < array.length; i++) {
             array[i].classList.toggle("no-show");
         }
     }
 
     function setAllFalse() {
-        starterBool = false;
-        hibachiBool = false;
-        fishBool = false;
-        rollBool = false;
-        desertBool = false;
-        cocktailBool = false;
-        beerBool = false;
+        for(let i = 0; i < menuItems.length; i++) {
+            menuItems[i].bool = false;
+        }
     }
     
 
