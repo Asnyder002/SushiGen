@@ -6,13 +6,17 @@ function setUpMenuList() {
 
     starterLink.addEventListener("click", function(e) {
 
-        e.preventDefault();
-
-        for(let i = 0; i < starters.length; i++) {
-            starters[i].classList.toggle("no-show");
-        }
+        showSection(e, starters);
 
     });
+
+    function showSection(e, array) {
+        e.preventDefault();
+
+        for(let i = 0; i < array.length; i++) {
+            array[i].classList.toggle("no-show");
+        }
+    }
     
 
 }
