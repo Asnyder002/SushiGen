@@ -163,6 +163,10 @@ main {
     font-family: 'Raleway', sans-serif;
 }
 
+.no-show {
+    display: none;
+}
+
 @media screen and (max-width:1024px){
 
     header {
