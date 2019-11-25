@@ -9,6 +9,16 @@ class menuItem {
 
 function setUpMenuList() {
 
+    menuItems = [
+                 new menuItem(document.querySelector(".starterLink"), document.querySelectorAll(".starter"), true),
+                 new menuItem(document.querySelector(".hibachiLink"), document.querySelectorAll(".hibachi"), false),
+                 new menuItem(document.querySelector(".fishLink"), document.querySelectorAll(".fish"), false),
+                 new menuItem(document.querySelector(".rollLink"), document.querySelectorAll(".rolls"), false),
+                 new menuItem(document.querySelector(".rollLink"), document.querySelectorAll(".desert"), false),
+                 new menuItem(document.querySelector(".cocktailLink"), document.querySelectorAll(".cocktails"), false),
+                 new menuItem(document.querySelector(".beerLink"), document.querySelectorAll(".drinks"), false)
+                ]
+
     let starterTest = new menuItem(document.querySelector(".starterLink"), document.querySelectorAll(".starter"), true);
     let hibachiTest = new menuItem(document.querySelector(".hibachiLink"), document.querySelectorAll(".hibachi"), false);
     let fishTest = new menuItem(document.querySelector(".fishLink"), document.querySelectorAll(".fish"), false);
