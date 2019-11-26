@@ -92,6 +92,10 @@ main {
     padding-right: 10%;
 }
 
+p {
+    text-align: center;
+}
+
 .menuList {
     display: flex;
     flex-wrap: wrap;
@@ -163,6 +167,47 @@ main {
     font-family: 'Raleway', sans-serif;
 }
 
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #464646;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-family: 'Lato', sans-serif;
+}
+
+.footerBox {
+    color: rgb(226, 226, 226);
+}
+
+.footerHeading{
+    font-size: 25px;
+    padding-bottom: 40px;
+}
+
+.city{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.address{
+    margin-bottom: 35px;
+    line-height: 23px;
+}
+
+th {
+    text-align: left;
+}
+
+td {
+    text-align: left;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
 .no-show {
     display: none;
 }
@@ -179,6 +224,10 @@ main {
 
     .nav-links{
         width: 60%;
+    }
+
+    #locationBox{
+        margin-right: 15%;
     }
 
 }
@@ -218,6 +267,14 @@ main {
     .burger {
         display: block;
         cursor: pointer;
+    }
+
+    footer{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .footerHeading{
+        padding-bottom: 25px;
     }
 
 }
