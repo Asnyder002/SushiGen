@@ -137,6 +137,7 @@ p {
 .menuHeaderNote {
     font-family: 'Raleway', sans-serif;
     margin-top: 20px;
+    width: 80%;
 }
 
 .menuItems {
