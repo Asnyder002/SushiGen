@@ -128,13 +128,26 @@ function setUpMenuList() {
 
     });
 
-    function showSection(e, array) {
+    function showSection(e, menuItems, index) {
         e.preventDefault();
-        setAllFalse();
-        
-        for(let i = 0; i < array.length; i++) {
-            array[i].classList.toggle("no-show");
+
+        if (menuItems[index].bool == false) {
+
+            for(let j = 0; j < menuItems.length; j++) {
+                if(menuItems[j].bool == true) {
+                    for(let k = 0; k < menuItems[j].array.length; k++) {
+                        menuItems[index].array[k].classList.toggle("no-show");
+                    }
+                }
+            }
+
+            for(let i = 0; i < menuItems[index].array.length; i++) {
+                menuItems[index].array[i].classList.toggle("no-show");
+            }
+
+
         }
+        
     }
 
     function setAllFalse() {
