@@ -129,6 +129,21 @@ function setUpMenuList() {
     });
 
     function showSection(e, menuItems, index) {
+
+        // Stop click from bringing you to the top of the page
+
+        
+        // Check to see if it's currently active. If it is then do nothing. If it isn't
+        // then find the one that is currently active and toggle the class and set boolean to false
+        // Then show the content related to the click and set boolean to true.
+
+
+
+
+
+
+
+
         e.preventDefault();
 
         if (menuItems[index].bool == false) {
