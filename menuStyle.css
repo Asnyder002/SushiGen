@@ -269,6 +269,10 @@ td {
         cursor: pointer;
     }
 
+    .menuItems li {
+        width: 100%;
+    }
+
     footer{
         padding-left: 5%;
         padding-right: 5%;
