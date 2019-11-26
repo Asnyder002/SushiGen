@@ -92,10 +92,6 @@ main {
     padding-right: 10%;
 }
 
-p {
-    text-align: center;
-}
-
 .menuList {
     display: flex;
     flex-wrap: wrap;
@@ -136,6 +132,7 @@ p {
 
 .menuHeaderNote {
     font-family: 'Raleway', sans-serif;
+    text-align: center;
     margin-top: 20px;
     width: 80%;
 }
