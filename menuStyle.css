@@ -167,6 +167,10 @@ main {
     display: none;
 }
 
+.clicked {
+    text-decoration: underline !important;
+}
+
 @media screen and (max-width:1024px){
 
     header {

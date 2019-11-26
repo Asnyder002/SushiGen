@@ -1,31 +1,4 @@
-class menuItem {
-
-    constructor(link, eleArray, bool) {
-        this.link = link;
-        this.eleArray = eleArray;
-        this.bool = bool;
-    }
-}
-
 function setUpMenuList() {
-
-    let menuItems = [
-                 new menuItem(document.querySelector(".starterLink"), document.querySelectorAll(".starter"), true),
-                 new menuItem(document.querySelector(".hibachiLink"), document.querySelectorAll(".hibachi"), false),
-                 new menuItem(document.querySelector(".fishLink"), document.querySelectorAll(".fish"), false),
-                 new menuItem(document.querySelector(".rollLink"), document.querySelectorAll(".rolls"), false),
-                 new menuItem(document.querySelector(".rollLink"), document.querySelectorAll(".desert"), false),
-                 new menuItem(document.querySelector(".cocktailLink"), document.querySelectorAll(".cocktails"), false),
-                 new menuItem(document.querySelector(".beerLink"), document.querySelectorAll(".drinks"), false)
-                ]
-
-    let starterTest = new menuItem(document.querySelector(".starterLink"), document.querySelectorAll(".starter"), true);
-    let hibachiTest = new menuItem(document.querySelector(".hibachiLink"), document.querySelectorAll(".hibachi"), false);
-    let fishTest = new menuItem(document.querySelector(".fishLink"), document.querySelectorAll(".fish"), false);
-    let rollTest = new menuItem(document.querySelector(".rollLink"), document.querySelectorAll(".rolls"), false);
-    let desertTest = new menuItem(document.querySelector(".rollLink"), document.querySelectorAll(".desert"), false);
-    let cocktailTest = new menuItem(document.querySelector(".cocktailLink"), document.querySelectorAll(".cocktails"), false);
-    let beerTest = new menuItem(document.querySelector(".beerLink"), document.querySelectorAll(".drinks"), false);
     
     const starterLink = document.querySelector(".starterLink");
     const hibachiLink = document.querySelector(".hibachiLink");
@@ -38,140 +11,71 @@ function setUpMenuList() {
     const starters = document.querySelectorAll(".starter");
     const hibachi = document.querySelectorAll(".hibachi");
     const desert = document.querySelectorAll(".desert");
-    const drinks = document.querySelectorAll(".drinks");
+    const beer = document.querySelectorAll(".drinks");
     const cocktails = document.querySelectorAll(".cocktails");
     const fish = document.querySelectorAll(".fish");
     const rolls = document.querySelectorAll(".rolls");
 
-    let starterBool = true;
-    let hibachiBool = false;
-    let fishBool = false;
-    let rollBool = false;
-    let desertBool = false;
-    let cocktailBool = false;
-    let beerBool = false;
+    let currentMenuItem = starters;
+    let currentMenuLink = starterLink;
 
     starterLink.addEventListener("click", function(e) {
-
-        e.preventDefault();
-
-        if (starterBool == false) {
-            showSection(e, starters);
-            starterBool = true;
-        }
-
+        showSection(e, starters);
     });
 
     hibachiLink.addEventListener("click", function(e) {
-
-        e.preventDefault();
-
-        if (hibachiBool == false) {
-            showSection(e, hibachi);
-            hibachiBool = true;
-        }
-
+        console.log("Hibachi inside event: " + hibachi);
+        showSection(e, hibachi);
     });
 
     fishLink.addEventListener("click", function(e) {
-
-        e.preventDefault();
-
-        if (fishBool == false) {
-            showSection(e, fish);
-            fishBool = true;
-        }
-
+        showSection(e, fish);
     });
 
     rollLink.addEventListener("click", function(e) {
-
-        e.preventDefault();
-
-        if (rollBool == false) {
-            showSection(e, rolls);
-            rollBool = true;
-        }
-
+        showSection(e, rolls);
     });
 
     desertLink.addEventListener("click", function(e) {
-
-        e.preventDefault();
-        
-        if (desertBool == false) {
-            showSection(e, desert);
-            desertBool = true;
-        }
-
+        showSection(e, desert);
     });
 
     cocktailLink.addEventListener("click", function(e) {
-
-        e.preventDefault();
-
-        if (cocktailBool == false) {
-            showSection(e, cocktails);
-            cocktailBool = true;
-        }
-
+        showSection(e, cocktails);
     });
 
     beerLink.addEventListener("click", function(e) {
-
-        e.preventDefault();
-
-        if (beerBool == false) {
-            showSection(e, drinks);
-            beerBool = true;
-        }
-
+        showSection(e, beer);
     });
 
-    function showSection(e, menuItems, index) {
+    function showSection(e, menuItem) {
+
+        console.log("Current: " + currentMenuItem);
+        console.log("Menu Item: " + menuItem);
 
         // Stop click from bringing you to the top of the page
-
-        
-        // Check to see if it's currently active. If it is then do nothing. If it isn't
-        // then find the one that is currently active and toggle the class and set boolean to false
-        // Then show the content related to the click and set boolean to true.
-
-
-
-
-
-
-
-
         e.preventDefault();
-
-        if (menuItems[index].bool == false) {
-
-            for(let j = 0; j < menuItems.length; j++) {
-                if(menuItems[j].bool == true) {
-                    for(let k = 0; k < menuItems[j].array.length; k++) {
-                        menuItems[index].array[k].classList.toggle("no-show");
-                    }
-                }
-            }
-
-            for(let i = 0; i < menuItems[index].array.length; i++) {
-                menuItems[index].array[i].classList.toggle("no-show");
-            }
-
-
-        }
         
-    }
 
-    function setAllFalse() {
-        for(let i = 0; i < menuItems.length; i++) {
-            menuItems[i].bool = false;
+        // If the menu item isn't the current menu Item toggle off the current menu items
+        if(menuItem !== currentMenuItem) {
+            for(let i = 0; i < currentMenuItem.length; i++) {
+                currentMenuItem[i].classList.toggle("no-show");
+            }
+
+            // Shows the menu items for the selected menu items
+            for(let j = 0; j < menuItem.length; j++) {
+                menuItem[j].classList.toggle("no-show");
+            }
+
+            // Set's the menuItem to be the new currentMenuItem
+
+            currentMenuLink.classList.toggle("clicked");
+            e.target.classList.toggle("clicked");
+            currentMenuLink = e.target;
+            currentMenuItem = menuItem;
         }
-    }
-    
-
+}
 }
 
 setUpMenuList();
