@@ -267,8 +267,19 @@ td {
         cursor: pointer;
     }
 
+    .menuList a {
+        letter-spacing: 2px;
+        font-size: 20px;
+    }
+
     .menuItems li {
         width: 100%;
+    }
+
+    .menuHeader {
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: 3px;
     }
 
     footer{
