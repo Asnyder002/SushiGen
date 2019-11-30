@@ -264,6 +264,12 @@ td {
     transform: translateX(0%);
 }
 
+.navContainer {
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: background-color .8s linear;
+}
+
+
 @keyframes navLinkFade{
     from{
         opacity: 0;

@@ -264,7 +264,6 @@ td {
         height: 20%;
     }
 
-
     .burger {
         display: block;
         cursor: pointer;
@@ -297,6 +296,11 @@ td {
 
 .nav-active {
     transform: translateX(0%);
+}
+
+.navContainer {
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: background-color .8s linear;
 }
 
 @keyframes navLinkFade {
