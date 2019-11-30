@@ -244,12 +244,14 @@ td {
         height: 32vh;
     }
 
-    .nav-links {
+    .nav-links{
         position: absolute;
         right: 0px;
         height: 92vh;
         top: 8vh;
+        padding-top: 5%;
         background-color: rgba(0, 0, 0, 0.9);
+        justify-content: flex-start;
         flex-direction: column;
         align-items: center;
         width: 50%;
@@ -257,8 +259,9 @@ td {
         transition: transform 0.5s ease-in;
     }
 
-    .nav-links li {
+    .nav-links li{
         opacity: 0;
+        height: 20%;
     }
 
 
