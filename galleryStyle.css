@@ -169,6 +169,11 @@ td {
 
     header {
         background-attachment: scroll;
+        height: 40vh;
+    }
+
+    .titleContainer {
+        height: 32vh;
     }
 
     .line{
