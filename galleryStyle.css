@@ -206,6 +206,10 @@ td {
         cursor: pointer;
     }
 
+    .gallery {
+        margin: 0;
+    }
+
     footer{
         padding-left: 5%;
         padding-right: 5%;
