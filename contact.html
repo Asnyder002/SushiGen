@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="normalize.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="contactStyle.css">
     <title>Sushi Gen</title>
 </head>
 <body>
@@ -38,27 +38,34 @@
             </div>
         </nav>
         <div class="titleContainer">
-            <h1 id="business">Sushi Gen</h1>
-            <div class="line"></div>
-            <h1 id="area">Bossier/Shreveport</h1>
-            <img class="arrow" src="img/downArrow.png" alt="">
+            <h1>Contact</h1>
         </div>
     </header>
     <main>
-        <img class="logoBanner" src="img/sushiGenLogo.jpg" alt="">
-        <p>
-            Sushi Gen first opened it's doors in 2010 in Shreveport/Bossier and has been a local favorite 
-            ever since. Offering a cozy and casual atmosphere, we serve top-quality cuisine in a 
-            comfortable and inviting environment. Sushi Gen features several unique dining spaces. With 
-            an elegant dining room and sushi bar, a secluded dining area for large parties, and a relaxing 
-            patio, Sushi Gen has the atmosphere to fit your mood.
-        </p>
-        <p>
-            Our impressive line of experienced sushi chefs create dishes with quality sure to please your palette. 
-            Our sushi bar serves only the highest quality sushi and sashimi. In addition to our sushi bar, Sushi Gen 
-            also provides delicious hibachi style signature dishes that are sure to exceed your expectations. Along 
-            many other items on our menu, Sushi Gen has the cuisine to satisfy your appetite.
-        </p>
+        <div class="container">  
+            <form id="contact" action="" method="post">
+                <h3>Quick Contact</h3>
+                <h4>Contact us today, and get reply with in 24 hours!</h4>
+                <fieldset>
+                <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+                </fieldset>
+                <fieldset>
+                <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
+                </fieldset>
+                <fieldset>
+                <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                </fieldset>
+                <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                </fieldset>
+            </form>
+        </div>
     </main>
     <footer>
         <div class="footerBox" id="locationBox">
@@ -75,6 +82,7 @@
                 Shreveport, LA 71106<br>
                 (318) 219-7979
             </p>
+
         </div>
         <table class="footerBox">
             <th class="footerHeading">Hours</th>
