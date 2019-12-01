@@ -262,11 +262,16 @@ td {
 
 .nav-active{
     transform: translateX(0%);
+    position: fixed;
 }
 
 .navContainer {
     background-color: rgba(0, 0, 0, 0.9);
     transition: background-color .8s linear;
+}
+
+.bodyContainer {
+    overflow: hidden;
 }
 
 

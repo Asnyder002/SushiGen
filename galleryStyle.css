@@ -225,6 +225,10 @@ td {
     transition: background-color .8s linear;
 }
 
+.bodyContainer {
+    overflow: hidden;
+}
+
 @keyframes navLinkFade{
     from{
         opacity: 0;
