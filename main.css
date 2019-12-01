@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.titleContainer {
+    display: flex;
+    color: rgb(226, 226, 226);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    height: 62vh;
+    font-family: 'Montserrat', sans-serif;
+}
