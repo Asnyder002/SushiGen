@@ -5,6 +5,7 @@ const navSlide = function() {
     const navLinks = document.querySelectorAll(".nav-links li");
     const navContainer = document.querySelector(".nav");
     const body = document.querySelector(".everything");
+    const arrow = document.querySelector(".arrow");
 
     burger.addEventListener("click", function() {
         //Toggle Nav
@@ -26,6 +27,10 @@ const navSlide = function() {
         burger.classList.toggle("toggle");
         navContainer.classList.toggle("navContainer");
         body.classList.toggle("bodyContainer");
+
+        if(arrow != null) {
+            arrow.classList.toggle("arrowContainer");
+        }
 
     });
 

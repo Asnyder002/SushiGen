@@ -274,6 +274,10 @@ td {
     overflow: hidden;
 }
 
+.arrowContainer {
+    display: none;
+}
+
 
 @keyframes navLinkFade{
     from{
